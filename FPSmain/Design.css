@@ -1,0 +1,90 @@
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.sidebar {
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #333;
+    color: white;
+    left: 0;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 50px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.content {
+    margin-left: 200px;
+    padding: 0 20px;
+    box-sizing: border-box; 
+}
+
+header, main, footer {
+    text-align: center;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+main {
+    min-height: 500px;
+}
+
+footer {
+    background: #222; /* Dark background for the footer */
+    color: white; /* White text color for contrast */
+    padding: 10px 20px; /* Padding for some spacing inside the footer */
+    text-align: center; /* Center the text inside the footer */
+    position: fixed; /* Keep the footer at the bottom */
+    bottom: 0;
+    left: 0; /* Align the footer to the left edge of the viewport */
+    width: 100%; /* Extend the footer across the full width of the viewport */
+    box-sizing: border-box; /* Include padding in the width calculation */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 150px; /* Smaller sidebar for smaller screens */
+    }
+
+    .content {
+        margin-left: 150px; /* Adjust content margin to match sidebar */
+        margin-right: 150px; /* Maintain balance on the right side as well */
+    }
+
+    footer {
+        width: calc(100% - 150px); /* Adjust footer width to match sidebar */
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        position: static; /* Make sidebar flow in document on very small screens */
+        width: 100%; /* Full width */
+        height: auto;
+        padding-top: 20px;
+    }
+
+    .sidebar a {
+        text-align: center; /* Center align links */
+    }
+
+    .content, footer {
+        margin-left: 0; /* Remove margin */
+        width: 100%; /* Full width */
+    }
+}
