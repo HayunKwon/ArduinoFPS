@@ -110,7 +110,7 @@ footer {
 }
 
 .add-to-cart button {
-    background-color: #4CAF50; /* 버튼 배경색 */
+    background-color: #3643a7; /* 버튼 배경색 */
     color: white; /* 버튼 글자색 */
     padding: 10px 20px; /* 버튼 내부 여백 */
     border: none; /* 테두리 없음 */
@@ -118,5 +118,5 @@ footer {
 }
 
 .add-to-cart button:hover {
-    background-color: #45a049; /* 호버 상태에서 버튼 배경색 변경 */
+    background-color: #3643a7; /* 호버 상태에서 버튼 배경색 변경 */
 }
